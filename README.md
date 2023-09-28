@@ -1,7 +1,3 @@
-# Threeveloper
-
-## 3. The Canvas Component
-
 ![Portfolio](./portfolio.png)
 
 Hey everyone! 👋
