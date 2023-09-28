@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { BufferGeometryUtils } from "three/examples/jsm/utils/BufferGeometryUtils.js";
+import { mergeBufferGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 
 export default class Objects {
     constructor(_options) {
@@ -173,7 +173,7 @@ export default class Objects {
             for (const _mergeItemName in this.merge.items) {
                 const mergeItem = this.merge.items[_mergeItemName];
 
-                mergeItem.geometry = BufferGeometryUtils.mergeBufferGeometries(
+                mergeItem.geometry = mergeBufferGeometries(
                     mergeItem.geometriesToMerge
                 ); // Should add original geometry
                 mergeItem.mesh.geometry = mergeItem.geometry;
